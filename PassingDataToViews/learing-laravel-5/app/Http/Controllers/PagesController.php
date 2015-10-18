@@ -10,8 +10,12 @@ class PagesController extends Controller
 {
     public function about()
     {
-        $name = 'Adam <span style="color: red;">Alvarado</span>';
+        $data = [];
 
-        return view('pages.about')->with('name', $name);
+        $data['first'] = 'Adam';
+
+        $data['last'] = 'Alvarado';
+
+        return view('pages.about', $data);
     }
 }

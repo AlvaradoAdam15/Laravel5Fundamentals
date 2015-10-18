@@ -7,7 +7,7 @@
 
     <body>
 
-        <h1>About Me: {!! $name !!}</h1>
+        <h1>About Me: {{$first}} {{$last}}</h1>
 
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
