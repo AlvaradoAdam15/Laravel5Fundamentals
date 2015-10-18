@@ -2,8 +2,11 @@
 
 @section('content')
 
-<h1>About Me: {{$first}} {{$last}}</h1>
-
+    @if($first == 'Adam')
+        <h1>Hi {{$first}} {{$last}}</h1>
+    @else
+        <h1>About Me: {{$first}} {{$last}}</h1>
+    @endif
 <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
