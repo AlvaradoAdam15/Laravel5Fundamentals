@@ -2,11 +2,16 @@
 
 @section('content')
 
-    @if($first == 'Adam')
-        <h1>Hi {{$first}} {{$last}}</h1>
-    @else
-        <h1>About Me: {{$first}} {{$last}}</h1>
-    @endif
+    <h1>About</h1>
+
+    <h3>People I Like:</h3>
+
+    <ul>
+        @foreach($people as $person)
+            <li>{{ $person }}</li>
+        @endforeach
+    </ul>
+
 <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
