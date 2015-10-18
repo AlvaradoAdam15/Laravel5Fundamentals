@@ -7,7 +7,7 @@
 
     <body>
 
-        <h1>About Me: <?= $name; ?></h1>
+        <h1>About Me: {!! $name !!}</h1>
 
         <p>
             Text aqui
