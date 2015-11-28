@@ -12,7 +12,9 @@ class AddExcerptToArticlesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('articles', function (Blueprint $table) {
+            //
+        });
     }
 
     /**
@@ -22,6 +24,8 @@ class AddExcerptToArticlesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('articles', function (Blueprint $table) {
+            //
+        });
     }
 }
